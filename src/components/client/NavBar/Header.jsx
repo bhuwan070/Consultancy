@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import NavbarLink from "./NavbarLink";
+import Logo from "./Logo"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,13 +11,7 @@ export default function Header() {
       {/* Top Info Row */}
       <div className="hidden lg:flex flex-row items-start justify-between px-4 py-3 max-w-screen-xl mx-auto gap-6">
         {/* Logo */}
-        <Link to="/" className="flex-shrink-0">
-          <img
-            src="https://thomas.edu.np/storage/2023/02/Thomas-Logo.jpg"
-            alt="Logo"
-            className="h-20 w-auto"
-          />
-        </Link>
+        <Logo/> 
 
         {/* Contact Info */}
         <div className="hidden lg:block flex-shrink-0 flex-col text-sm text-gray-700 gap-y-2 md:gap-y-3 lg:gap-y-4">
@@ -108,13 +103,7 @@ export default function Header() {
       {/* 🔽 Mobile View: Logo + Dropdown Button (Only visible on mobile) */}
       <div className="flex items-center justify-between px-4 py-3 max-w-screen-xl mx-auto lg:hidden">
         {/* Logo */}
-        <Link to="/" className="flex-shrink-0">
-          <img
-            src="https://thomas.edu.np/storage/2023/02/Thomas-Logo.jpg"
-            alt="Logo"
-            className="h-16 w-auto"
-          />
-        </Link>
+        <Logo />
 
         {/* Dropdown Button */}
         <button
