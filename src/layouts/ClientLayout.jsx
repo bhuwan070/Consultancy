@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import Navbar from "../components/client/NavBar/Navbar";
+import Header from "../components/client/NavBar/Header";
 import Footer from "../components/client/footer/footer";
 
 const ClientLayout = () => {
@@ -10,7 +10,7 @@ const ClientLayout = () => {
   }, [location.pathname]);
   return (
     <div>
-      <Navbar />
+      <Header />
       <Outlet />
       <Footer />
     </div>
