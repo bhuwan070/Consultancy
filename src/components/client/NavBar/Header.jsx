@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import NavbarLink from "./NavbarLink";
-import Logo from "./Logo"
+import Logo from "./Logo";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ export default function Header() {
       {/* Top Info Row */}
       <div className="hidden lg:flex flex-row items-start justify-between px-4 py-3 max-w-screen-xl mx-auto gap-6">
         {/* Logo */}
-        <Logo/> 
+        <Logo />
 
         {/* Contact Info */}
         <div className="hidden lg:block flex-shrink-0 flex-col text-sm text-gray-700 gap-y-2 md:gap-y-3 lg:gap-y-4">
@@ -118,14 +118,14 @@ export default function Header() {
         <div className="bg-blue-900 lg:hidden w-full mt-4">
           <ul className="flex flex-col items-center text-center font-medium gap-2 text-blue-900">
             <NavbarLink to="/" label="Home" />
-            <NavbarLink to="/aboutus" label="About Us" />
+            <NavbarLink to="/about" label="About Us" />
             <NavbarLink to="/studyabroad" label="Study Abroad" />
             <NavbarLink to="/testpreparation" label="Test Preparation" />
             <NavbarLink to="/OurServices" label="Our Services" />
             <NavbarLink to="/languageclass" label="Language Class" />
             <NavbarLink to="/gallery" label="Gallery" />
             <NavbarLink to="/blog" label="Blog" />
-            <NavbarLink to="/contactus" label="Contact Us" />
+            <NavbarLink to="/contact" label="Contact Us" />
           </ul>
         </div>
       )}
@@ -135,7 +135,7 @@ export default function Header() {
         <div className="flex justify-between items-center mx-auto max-w-screen-xl">
           <ul className="flex flex-row font-medium space-x-8 text-white">
             <NavbarLink to="/" label="Home" />
-            <NavbarLink to="/aboutus" label="About Us" />
+            <NavbarLink to="/about" label="About Us" />
             <NavbarLink to="/studyabroad" label="Study Abroad" />
             <NavbarLink to="/testpreparation" label="Test Preparation" />
             <NavbarLink to="/OurServices" label="Our Services" />
