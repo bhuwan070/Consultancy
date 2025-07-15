@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import NavbarLink from "./NavbarLink";
 import Logo from "./Logo";
 
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -116,12 +117,60 @@ export default function Header() {
       {/* Mobile Nav Links */}
       {isMenuOpen && (
         <div className="bg-blue-900 lg:hidden w-full mt-4">
-          <ul className="flex flex-col items-center text-center font-medium gap-2 text-blue-900">
+          <ul className="flex flex-col items-center text-center font-medium gap-2 text-white">
             <NavbarLink to="/" label="Home" />
-            <NavbarLink to="/about" label="About Us" />
-            <NavbarLink to="/studyabroad" label="Study Abroad" />
-            <NavbarLink to="/testpreparation" label="Test Preparation" />
-            <NavbarLink to="/OurServices" label="Our Services" />
+
+            <NavbarLink
+              to="/about"
+              label="About Us"
+              dropdownItems={[
+                { label: "Our Team", to: "/about/our-team" },
+                { label: "Testimonials", to: "/about/testimonials" },
+                { label: "Company Profile", to: "/about/company-profile" },
+                { label: "Legal Document", to: "/about/legal-document" },
+              ]}
+            />
+
+            <NavbarLink
+              to="/studyabroad"
+              label="Study Abroad"
+              dropdownItems={[
+                { label: "Study in USA", to: "/about/usa" },
+                { label: "Study in Japan", to: "/about/japan" },
+                { label: "Study in UK", to: "/about/uk" },
+                { label: "Study in Canada", to: "/about/canada" },
+                { label: "Study in Australia", to: "/about/australia" },
+              ]}
+            />
+
+            <NavbarLink
+              to="/testpreparation"
+              label="Test Preparation"
+              dropdownItems={[
+                { label: "IELTS", to: "/about/ielts" },
+                { label: "PTE", to: "/about/pte" },
+                { label: "GRE", to: "/about/gre" },
+                { label: "GMAT", to: "/about/gmat" },
+                { label: "SAT", to: "/about/sat" },
+              ]}
+            />
+
+            <NavbarLink
+              to="/OurServices"
+              label="Our Services"
+              dropdownItems={[
+                { label: "Career Counselling", to: "/about/counselling" },
+                {
+                  label: "College & University Selection",
+                  to: "/about/uni-selection",
+                },
+                { label: "Documentation Guidance", to: "/about/documentation" },
+                { label: "Admission Guidance", to: "/about/ad-guide" },
+                { label: "Visa Assistance", to: "/about/visa-assist" },
+                { label: "Financial Assistance", to: "/about/fin-assist" },
+              ]}
+            />
+
             <NavbarLink to="/languageclass" label="Language Class" />
             <NavbarLink to="/gallery" label="Gallery" />
             <NavbarLink to="/blog" label="Blog" />
@@ -135,14 +184,62 @@ export default function Header() {
         <div className="flex justify-between items-center mx-auto max-w-screen-xl">
           <ul className="flex flex-row font-medium space-x-8 text-white">
             <NavbarLink to="/" label="Home" />
-            <NavbarLink to="/about" label="About Us" />
-            <NavbarLink to="/studyabroad" label="Study Abroad" />
-            <NavbarLink to="/testpreparation" label="Test Preparation" />
-            <NavbarLink to="/OurServices" label="Our Services" />
+
+            <NavbarLink
+              to="/about"
+              label="About Us "
+              dropdownItems={[
+                { label: "Our Team", to: "/about/our-team" },
+                { label: "Testimonials", to: "/about/testimonials" },
+                { label: "Company Profile", to: "/about/company-profile" },
+                { label: "Legal Document", to: "/about/legal-document" },
+              ]}
+            />
+
+            <NavbarLink
+              to="/studyabroad"
+              label="Study Abroad"
+              dropdownItems={[
+                { label: "Study in USA", to: "/about/usa" },
+                { label: "Study in Japan", to: "/about/japan" },
+                { label: "Study in UK", to: "/about/uk" },
+                { label: "Study in Canada", to: "/about/canada" },
+                { label: "Study in Australia", to: "/about/australia" },
+              ]}
+            />
+
+            <NavbarLink
+              to="/testpreparation"
+              label="Test Preparation"
+              dropdownItems={[
+                { label: "IELTS", to: "/about/ielts" },
+                { label: "PTE", to: "/about/pte" },
+                { label: "GRE", to: "/about/gre" },
+                { label: "GMAT", to: "/about/gmat" },
+                { label: "SAT", to: "/about/sat" },
+              ]}
+            />
+
+            <NavbarLink
+              to="/OurServices"
+              label="Our Services"
+              dropdownItems={[
+                { label: "Career Counselling", to: "/about/counselling" },
+                {
+                  label: "College & University Selection",
+                  to: "/about/uni-selection",
+                },
+                { label: "Documentation Guidance", to: "/about/documentation" },
+                { label: "Admission Guidance", to: "/about/ad-guide" },
+                { label: "Visa Assistance", to: "/about/visa-assist" },
+                { label: "Financial Assistance", to: "/about/fin-assist" },
+              ]}
+            />
+
             <NavbarLink to="/languageclass" label="Language Class" />
             <NavbarLink to="/gallery" label="Gallery" />
             <NavbarLink to="/blog" label="Blog" />
-            <NavbarLink to="/contactus" label="Contact Us" />
+            <NavbarLink to="/contact" label="Contact Us" />
           </ul>
         </div>
       </nav>
