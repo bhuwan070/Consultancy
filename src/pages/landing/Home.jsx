@@ -3,8 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
-import StudyAbroadCard from "./StudyAbrod";
+import StudyAbroadCard from "../../components/client/Home/StudyAbrodHomeCard";
 import { NavLink } from "react-router-dom";
+import { md_card_data } from "../../data/md_card_data";
 
 const images = ["/images/japan.jpg", "/images/usa.jpg"];
 
@@ -23,12 +24,7 @@ const cards = [
   },
 ];
 
-const cardData = {
-  photo: "/images/md1.jpg",
-  name: "Md. Sunil Khadka",
-  message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec tincidunt egestas, nisl nunc aliquam nunc, eget tincidunt nunc nunc eget nunc. Vivamus at ante eget lorem tincidunt dapibus. Integer vehicula, nunc non dignissim sollicitudin, sem purus cursus libero, sit amet egestas.",
-};
+
 
 export default function Home() {
   return (
@@ -67,19 +63,19 @@ export default function Home() {
         <div className="bg-[#F5F1E9] shadow-lg rounded-xl p-6 sm:p-8 max-w-md w-full text-center space-y-4">
           {/* MD's Photo */}
           <img
-            src="/images/md1.jpg"
-            alt="Md. Sunil Khadka"
+            src={md_card_data.photo}
+            alt={"Md. Sunil Khadka"}
             className="w-36 h-36 sm:w-32 sm:h-32 md:w-36 md:h-36 mx-auto rounded-2xl object-cover shadow-md"
           />
 
           {/* Name or Signature */}
           <p className="text-lg md:text-xl font-bold text-gray-800 max-w-xl mx-auto">
-            Message From MD
+           {md_card_data.title}
           </p>
 
           {/* MD's Message */}
           <p className="text-base sm:text-lg md:text-xl text-gray-700">
-            {cardData.message}
+            {md_card_data.message}
           </p>
         </div>
       </section>

@@ -4,7 +4,7 @@ import ClientLayout from "../src/layouts/ClientLayout";
 import Home from "./pages/landing/Home";
 import About from "./pages/landing/About";
 import Contact from "./pages/landing/Contact";
-import StudyAbrod from "./pages/landing/StudyAbrod";
+import StudyAbroad from "./pages/landing/StudyAbroad";
 import TestPrepration from "./pages/landing/TestPrepration";
 import Gallery from "./pages/landing/Gallery";
 import Blogs from "./pages/landing/Blogs";
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/studyabroad",
-        element: <StudyAbrod />,
+        element: <StudyAbroad />,
       },
       {
         path: "/testpreparation",
