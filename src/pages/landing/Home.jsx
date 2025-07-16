@@ -37,14 +37,14 @@ export default function Home() {
           <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4 text-white drop-shadow-lg">
             Welcome to Our Website
           </h1>
-          <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-cyan-300 drop-shadow-md">
+          <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-white drop-shadow-md">
             We provide the best solutions for your needs.
           </p>
         </div>
       </section>
 
       <section className="flex justify-center bg-gray-100 py-10 px-4">
-        <div className="bg-[#F5F1E9] shadow-lg rounded-xl p-6 sm:p-8 max-w-md w-full text-center space-y-4">
+        <div className="bg-blue-200 shadow-lg rounded-xl p-6 sm:p-8 max-w-md w-full text-center space-y-4">
           {/* MD's Photo */}
           <img
             src={md_card_data.photo}
@@ -75,11 +75,12 @@ export default function Home() {
               <StudyAbroadCard key={idx} {...card} />
             ))}
           </div>
+
           {/* View All Destinations Button */}
           <div className="flex justify-center mt-10">
             <NavLink
               to="/studyabroad"
-              className="bg-[#8B4513] hover:bg-cyan-700 text-white  px-3 py-2 rounded-md transition"
+              className="bg-[#8B4513] hover:bg-blue-900 text-white  px-3 py-2 rounded-md transition"
             >
               View All Destination
             </NavLink>
