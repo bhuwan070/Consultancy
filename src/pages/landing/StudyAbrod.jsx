@@ -16,18 +16,16 @@ export default function StudyAbroadCard({ title, image, description, link }) {
       {/* Content */}
       <div className="p-6 flex-1 flex flex-col justify-between">
         <div>
-          <h3 className="text-xl font-semibold text-gray-800 hover:text-cyan-600 transition duration-200 mb-2">
+          <h3 className="text-xl font-semibold text-gray-800 group-hover:text-[#8B4513] transition duration-200 mb-2">
             {title}
           </h3>
-          <p className="text-gray-600 text-sm mb-4">
-            {description}
-          </p>
+          <p className="text-gray-600 text-sm mb-4">{description}</p>
         </div>
 
         {/* Learn More Button */}
         <Link
           to={link}
-          className="self-start bg-cyan-600 text-white text-xs px-3 py-1.5 rounded-full hover:bg-cyan-700 transition"
+          className="self-center bg-blue-700 text-white text-sm px-4 py-2 rounded hover:bg-[#8B4513] transition"
         >
           Learn More
         </Link>

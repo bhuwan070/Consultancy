@@ -85,7 +85,7 @@ export default function Home() {
 
       <section className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
+          <h2 className="text-2xl font-bold text-center mb-8 text-[#8B4513]">
             STUDY ABROAD SERVICES
           </h2>
 
