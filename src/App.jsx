@@ -4,7 +4,7 @@ import ClientLayout from "../src/layouts/ClientLayout";
 import Home from "./pages/landing/Home";
 import About from "./pages/landing/About";
 import Contact from "./pages/landing/Contact";
-import StudyAbrod from "./pages/landing/StudyAbrod";
+import StudyAbroad from "./pages/landing/StudyAbroad";
 import TestPrepration from "./pages/landing/TestPrepration";
 import Gallery from "./pages/landing/Gallery";
 import Blogs from "./pages/landing/Blogs";
@@ -19,27 +19,27 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "about",
+        path: "/about",
         element: <About />,
       },
       {
-        path: "contact",
+        path: "/contact",
         element: <Contact />,
       },
       {
-        path: "studyabroad",
-        element: <StudyAbrod />,
+        path: "/studyabroad",
+        element: <StudyAbroad />,
       },
       {
-        path: "testpreparation",
+        path: "/testpreparation",
         element: <TestPrepration />,
       },
       {
-        path: "gallery",
+        path: "/gallery",
         element: <Gallery />,
       },
       {
-        path: "blogs",
+        path: "/blogs",
         element: <Blogs />,
       },
     ],
