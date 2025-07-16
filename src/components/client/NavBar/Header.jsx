@@ -35,7 +35,7 @@ export default function Header() {
             <img
               src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
               alt="WhatsApp"
-              className="w-5 h-5 mr-2"
+              className="w-5 h-5 mr-2 mt-2"
             />
             <span>+977-9800000000</span>
           </div>
@@ -92,9 +92,9 @@ export default function Header() {
         {/* Side Logo (Desktop only) */}
         <div className="hidden lg:block flex-shrink-0">
           <img
-            src="https://thomas.edu.np/storage/2023/02/Side-logo.jpg"
+            src="/images/side_logo/side_logoo.jpg"
             alt="Extra icon"
-            className="h-20 w-60 object-contain"
+            className="h-20 w-96 object-contain"
           />
         </div>
       </div>
@@ -179,7 +179,7 @@ export default function Header() {
 
       {/* Desktop Navbar */}
       <nav className="bg-blue-900 border-gray-200 px-4 lg:px-6 py-5 hidden lg:block">
-        <div className="flex justify-between items-center mx-auto max-w-screen-xl">
+        <div className="flex justify-center items-center mx-auto max-w-screen-xl">
           <ul className="flex flex-row font-medium space-x-8 text-white">
             <NavbarLink to="/" label="Home" />
 
