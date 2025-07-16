@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import DropdownMenu from "./DropdownMenu";
 
 export default function NavbarLink({ to, label, dropdownItems }) {
@@ -11,12 +11,12 @@ export default function NavbarLink({ to, label, dropdownItems }) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Link
+      <NavLink
         to={to}
         className="hover:text-orange-700 transition duration-150 ease-in-out"
       >
         {label}
-      </Link>
+      </NavLink>
 
       {dropdownItems && (
         <div

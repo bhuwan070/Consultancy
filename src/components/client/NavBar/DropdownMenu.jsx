@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function DropdownMenu({ items = [] }) {
   return (
@@ -7,12 +7,12 @@ export default function DropdownMenu({ items = [] }) {
       <ul className="text-sm text-gray-700">
         {items.map((item, idx) => (
           <li key={idx}>
-            <Link
+            <NavLink
               to={item.to}
               className="block px-4 py-2 rounded-md hover:bg-orange-700 hover:text-white"
             >
               {item.label}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>
