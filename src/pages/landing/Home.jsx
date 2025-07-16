@@ -6,25 +6,9 @@ import { Autoplay } from "swiper/modules";
 import StudyAbroadCard from "../../components/client/Home/StudyAbrodHomeCard";
 import { NavLink } from "react-router-dom";
 import { md_card_data } from "../../data/md_card_data";
+import { study_card_data } from "../../data/study_card_data";
 
-const images = ["/images/japan.jpg", "/images/usa.jpg"];
-
-const cards = [
-  {
-    title: "Study in Japan",
-    image: "/images/japan.jpg",
-    description: "World-class education and cultural experiences in Japan.",
-    link: "/studyabroad/japan",
-  },
-  {
-    title: "Study in USA",
-    image: "/images/usa.jpg",
-    description: "Top universities and diverse opportunities in the USA.",
-    link: "/studyabroad/usa",
-  },
-];
-
-
+const SliderImages = study_card_data.map(item => item.image);
 
 export default function Home() {
   return (
@@ -37,7 +21,7 @@ export default function Home() {
           loop={true}
           className="w-full h-full z-0"
         >
-          {images.map((img, idx) => (
+          {SliderImages.map((img, idx) => (
             <SwiperSlide key={idx}>
               <img
                 src={img}
@@ -87,7 +71,7 @@ export default function Home() {
           </h2>
 
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {cards.map((card, idx) => (
+            {study_card_data.map((card, idx) => (
               <StudyAbroadCard key={idx} {...card} />
             ))}
           </div>
