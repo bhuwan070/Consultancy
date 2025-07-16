@@ -17,7 +17,7 @@ export default function Home() {
       <section className="relative w-full h-screen overflow-hidden">
         <Swiper
           modules={[Autoplay]}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 10000 }}
           loop={true}
           className="w-full h-full z-0"
         >
