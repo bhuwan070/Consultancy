@@ -3,8 +3,24 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
+import StudyAbroadCard from "./StudyAbrod";
 
 const images = ["/images/japan.jpg", "/images/usa.jpg"];
+
+const cards = [
+  {
+    title: "Study in Japan",
+    image: "/images/japan.jpg",
+    description: "World-class education and cultural experiences in Japan.",
+    link: "/studyabroad/japan",
+  },
+  {
+    title: "Study in USA",
+    image: "/images/usa.jpg",
+    description: "Top universities and diverse opportunities in the USA.",
+    link: "/studyabroad/usa",
+  },
+];
 
 const cardData = {
   photo: "/images/md1.jpg",
@@ -54,18 +70,30 @@ export default function Home() {
             alt="Md. Sunil Khadka"
             className="w-36 h-36 sm:w-32 sm:h-32 md:w-36 md:h-36 mx-auto rounded-2xl object-cover shadow-md"
           />
-          
+
           {/* Name or Signature */}
           <p className="text-lg md:text-xl font-bold text-gray-800 max-w-xl mx-auto">
-             Message From MD
+            Message From MD
           </p>
 
           {/* MD's Message */}
           <p className="text-base sm:text-lg md:text-xl text-gray-700">
-              {cardData.message}
+            {cardData.message}
           </p>
+        </div>
+      </section>
 
+      <section className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
+            STUDY ABROAD SERVICES
+          </h2>
 
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {cards.map((card, idx) => (
+              <StudyAbroadCard key={idx} {...card} />
+            ))}
+          </div>
         </div>
       </section>
     </>
