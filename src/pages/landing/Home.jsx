@@ -7,6 +7,10 @@ import StudyAbroadCard from "../../components/client/Home/StudyAbrodHomeCard";
 import { NavLink } from "react-router-dom";
 import { md_card_data } from "../../data/md_card_data";
 import { study_card_data } from "../../data/study_card_data";
+import TestimonialSection from "../../components/client/Home/TestimonialSection";
+import StudyBlogSection from "../../components/client/Home/StuduBlog";
+import AffiliatedUniversities from "../../components/client/Home/AffilatedUniversities";
+import StudyAbroadCTA from "../../components/client/Home/StudyAbroadCTA";
 
 const SliderImages = study_card_data.map(item => item.image);
 
@@ -17,7 +21,7 @@ export default function Home() {
       <section className="relative w-full h-screen overflow-hidden">
         <Swiper
           modules={[Autoplay]}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 10000 }}
           loop={true}
           className="w-full h-full z-0"
         >
@@ -86,6 +90,21 @@ export default function Home() {
             </NavLink>
           </div>
         </div>
+        <section className="mt-5">
+          <TestimonialSection/>
+        </section>
+
+        <section className="mt-5">
+            <StudyBlogSection />
+        </section>
+
+        <section className="mt-5">
+           <AffiliatedUniversities />
+        </section>
+
+        <section>
+          <StudyAbroadCTA />
+        </section>
       </section>
     </>
   );
