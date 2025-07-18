@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
-import StudyAbroadCard from "../../components/client/Home/StudyAbrodHomeCard";
+import StudyAbroadCard from "../../components/client/Home/StudyAbrodCard";
 import { NavLink } from "react-router-dom";
 import { md_card_data } from "../../data/md_card_data";
 import { study_card_data } from "../../data/study_card_data";
@@ -11,8 +11,9 @@ import TestimonialSection from "../../components/client/Home/TestimonialSection"
 import StudyBlogSection from "../../components/client/Home/StuduBlog";
 import AffiliatedUniversities from "../../components/client/Home/AffilatedUniversities";
 import StudyAbroadCTA from "../../components/client/Home/StudyAbroadCTA";
+import MessageMD from "../../components/client/Home/MessageMD";
 
-const SliderImages = study_card_data.map(item => item.image);
+const SliderImages = study_card_data.map((item) => item.image);
 
 export default function Home() {
   return (
@@ -47,26 +48,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex justify-center bg-gray-100 py-10 px-4">
-        <div className="bg-blue-200 shadow-lg rounded-xl p-6 sm:p-8 max-w-md w-full text-center space-y-4">
-          {/* MD's Photo */}
-          <img
-            src={md_card_data.photo}
-            alt={"Md. Sunil Khadka"}
-            className="w-36 h-36 sm:w-32 sm:h-32 md:w-36 md:h-36 mx-auto rounded-2xl object-cover shadow-md"
-          />
-
-          {/* Name or Signature */}
-          <p className="text-lg md:text-xl font-bold text-gray-800 max-w-xl mx-auto">
-           {md_card_data.title}
-          </p>
-
-          {/* MD's Message */}
-          <p className="text-base sm:text-lg md:text-xl text-gray-700">
-            {md_card_data.message}
-          </p>
-        </div>
-      </section>
+      <MessageMD />
 
       <section className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -91,15 +73,15 @@ export default function Home() {
           </div>
         </div>
         <section className="mt-5">
-          <TestimonialSection/>
+          <TestimonialSection />
         </section>
 
         <section className="mt-5">
-            <StudyBlogSection />
+          <StudyBlogSection />
         </section>
 
         <section className="mt-5">
-           <AffiliatedUniversities />
+          <AffiliatedUniversities />
         </section>
 
         <section>

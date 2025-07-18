@@ -4,10 +4,14 @@ import ClientLayout from "../src/layouts/ClientLayout";
 import Home from "./pages/landing/Home";
 import About from "./pages/landing/About";
 import Contact from "./pages/landing/Contact";
-import StudyAbroad from "./pages/landing/StudyAbroad";
+import StudyAbroad from "./pages/landing/study_abroad/StudyAbroad";
 import TestPrepration from "./pages/landing/TestPrepration";
 import Gallery from "./pages/landing/Gallery";
 import Blogs from "./pages/landing/Blogs";
+import StudyInUSA from "./pages/landing/study_abroad/study_countries/StudyInUSA";
+import StudyInJapan from "./pages/landing/study_abroad/study_countries/StudyInJapan";
+import StudyInUK from "./pages/landing/study_abroad/study_countries/StudyInUK";
+import StudyInCanada from "./pages/landing/study_abroad/study_countries/StudyInCanada";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +33,22 @@ const router = createBrowserRouter([
       {
         path: "/studyabroad",
         element: <StudyAbroad />,
+      },
+      {
+        path: "/studyabroad/usa",
+        element: <StudyInUSA />,
+      },
+      {
+        path: "/studyabroad/japan",
+        element: <StudyInJapan />,
+      },
+      {
+        path: "/studyabroad/uk",
+        element: <StudyInUK />,
+      },
+      {
+        path: "/studyabroad/canada",
+        element: <StudyInCanada />,
       },
       {
         path: "/testpreparation",

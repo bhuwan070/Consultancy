@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function StudyAbroadCTA() {
   return (
-    <section className="bg-gradient-to-r from-blue-100 to-indigo-100 py-10">
+    <section className="bg-gradient-to-r from-blue-200 via-white to-blue-300 py-10">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Text */}

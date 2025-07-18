@@ -7,7 +7,7 @@ const blogPosts = [
     id: 1,
     title: "How to Prepare for the IELTS Exam in 30 Days",
     excerpt: "A complete day-wise plan to crack IELTS, with tips, resources, and mock test strategies.",
-    image: "https://source.unsplash.com/600x400/?ielts,study",
+    image: "./images",
     slug: "/blogs/ielts-prep-30-days",
   },
   {
@@ -28,7 +28,7 @@ const blogPosts = [
 
 export default function StudyBlogSection() {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-gradient-to-r from-blue-200 via-white to-blue-300 py-16">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
           Latest Study Blogs
