@@ -7,6 +7,7 @@ import StudyAbroadCard from "../../components/client/Home/StudyAbrodHomeCard";
 import { NavLink } from "react-router-dom";
 import { md_card_data } from "../../data/md_card_data";
 import { study_card_data } from "../../data/study_card_data";
+import TestimonialSection from "../../components/client/Home/TestimonialSection";
 
 const SliderImages = study_card_data.map(item => item.image);
 
@@ -86,6 +87,9 @@ export default function Home() {
             </NavLink>
           </div>
         </div>
+        <section>
+          <TestimonialSection/>
+        </section>
       </section>
     </>
   );
