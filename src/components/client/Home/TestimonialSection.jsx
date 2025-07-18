@@ -57,11 +57,7 @@ export default function TestimonialCarousel() {
             return (
               <SwiperSlide key={index}>
                 <div
-                  className={`p-6 md:p-8 rounded-2xl shadow-md bg-white mx-2 transition-all duration-300 transform ${
-                    isLarge
-                      ? "scale-100 md:scale-120 z-10"
-                      : "scale-70 opacity-90"
-                  }`}
+                  className={`p-6 md:p-8 rounded-2xl shadow-md bg-white mx-2 transition-all duration-300 transform`}
                 >
                   <img
                     src={item.image}

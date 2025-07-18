@@ -121,12 +121,6 @@ export default function Header() {
             <NavbarLink
               to="/about"
               label="About Us"
-              dropdownItems={[
-                { label: "Our Team", to: "/about/our-team" },
-                { label: "Testimonials", to: "/about/testimonials" },
-                { label: "Company Profile", to: "/about/company-profile" },
-                { label: "Legal Document", to: "/about/legal-document" },
-              ]}
             />
 
             <NavbarLink
@@ -186,12 +180,6 @@ export default function Header() {
             <NavbarLink
               to="/about"
               label="About Us "
-              dropdownItems={[
-                { label: "Our Team", to: "/about/our-team" },
-                { label: "Testimonials", to: "/about/testimonials" },
-                { label: "Company Profile", to: "/about/company-profile" },
-                { label: "Legal Document", to: "/about/legal-document" },
-              ]}
             />
 
             <NavbarLink
