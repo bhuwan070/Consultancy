@@ -127,11 +127,10 @@ export default function Header() {
               to="/studyabroad"
               label="Study Abroad"
               dropdownItems={[
-                { label: "Study in USA", to: "/about/usa" },
-                { label: "Study in Japan", to: "/about/japan" },
-                { label: "Study in UK", to: "/about/uk" },
-                { label: "Study in Canada", to: "/about/canada" },
-                { label: "Study in Australia", to: "/about/australia" },
+                { label: "Study in USA", to: "/studyabroad/usa" },
+                { label: "Study in Japan", to: "/studyabroad/japan" },
+                { label: "Study in UK", to: "/studyabroad/uk" },
+                { label: "Study in Canada", to: "/studyabroad/australia" },
               ]}
             />
 

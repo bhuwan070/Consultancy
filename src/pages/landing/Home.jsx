@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
-import StudyAbroadCard from "../../components/client/Home/StudyAbrodHomeCard";
+import StudyAbroadCard from "../../components/client/Home/StudyAbrodCard";
 import { NavLink } from "react-router-dom";
 import { md_card_data } from "../../data/md_card_data";
 import { study_card_data } from "../../data/study_card_data";

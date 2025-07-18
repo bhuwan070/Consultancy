@@ -2,6 +2,8 @@ import React from "react";
 import MessageMD from "../../components/client/Home/MessageMD";
 import OurTeam from "../../components/client/about/OurTeam";
 import { our_team_data } from "../../data/our_team_data";
+import AffiliatedUniversities from "../../components/client/Home/AffilatedUniversities";
+import StudyAbroadCTA from "../../components/client/Home/StudyAbroadCTA";
 
 const About = () => {
   return (
@@ -29,6 +31,11 @@ const About = () => {
       <OurTeam members={our_team_data} />
 
       {/* affilated colleges/universities */}
+      <AffiliatedUniversities />
+
+      {/* study abroad CT section */}
+      <StudyAbroadCTA />
+      
     </section>
   );
 };
