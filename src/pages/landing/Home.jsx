@@ -10,6 +10,7 @@ import { study_card_data } from "../../data/study_card_data";
 import TestimonialSection from "../../components/client/Home/TestimonialSection";
 import StudyBlogSection from "../../components/client/Home/StuduBlog";
 import AffiliatedUniversities from "../../components/client/Home/AffilatedUniversities";
+import StudyAbroadCTA from "../../components/client/Home/StudyAbroadCTA";
 
 const SliderImages = study_card_data.map(item => item.image);
 
@@ -99,6 +100,10 @@ export default function Home() {
 
         <section className="mt-5">
            <AffiliatedUniversities />
+        </section>
+
+        <section>
+          <StudyAbroadCTA />
         </section>
       </section>
     </>
