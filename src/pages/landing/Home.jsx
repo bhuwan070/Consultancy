@@ -8,6 +8,8 @@ import { NavLink } from "react-router-dom";
 import { md_card_data } from "../../data/md_card_data";
 import { study_card_data } from "../../data/study_card_data";
 import TestimonialSection from "../../components/client/Home/TestimonialSection";
+import StudyBlogSection from "../../components/client/Home/StuduBlog";
+import AffiliatedUniversities from "../../components/client/Home/AffilatedUniversities";
 
 const SliderImages = study_card_data.map(item => item.image);
 
@@ -87,8 +89,16 @@ export default function Home() {
             </NavLink>
           </div>
         </div>
-        <section>
+        <section className="mt-5">
           <TestimonialSection/>
+        </section>
+
+        <section className="mt-5">
+            <StudyBlogSection />
+        </section>
+
+        <section className="mt-5">
+           <AffiliatedUniversities />
         </section>
       </section>
     </>

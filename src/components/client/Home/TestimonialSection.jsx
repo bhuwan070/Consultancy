@@ -32,7 +32,7 @@ export default function TestimonialCarousel() {
   return (
     <section className="bg-gradient-to-r from-blue-200 via-white to-blue-300 py-12">
       <div className="max-w-6xl mx-auto px-4 text-center relative">
-        <h2 className="text-3xl font-bold mb-8 text-gray-800">What Our Students Say</h2>
+        <h2 className="text-3xl font-bold mb-8 text-gray-800">STUDENT TESTIMONIALS</h2>
         <Swiper
           spaceBetween={30}
           pagination={{ clickable: true }}
