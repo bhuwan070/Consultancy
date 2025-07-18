@@ -32,10 +32,21 @@ const Footer = () => {
         </div>
         {/* social media */}
         <div className="flex-1 text-center md:text-left">
+          <h4 className="font-bold mb-2">Study Abroad</h4>
+          <p>Study in US</p>
+          <p>Study in UK</p>
+          <p>Study in Australia</p>
+          <p>Study in Canada</p>
+          <p>Study in Japan</p>
+        </div>
+        {/* social media */}
+        <div className="flex-1 text-center md:text-left">
           <h4 className="font-bold mb-2">Follow Us</h4>
-          <p>Facebook</p>
-          <p>Instagram</p>
-          <p>LinkedIn</p>
+          <div className="flex gap-4 justify-center md:justify-start">
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>LinkedIn</p>
+          </div>
         </div>
       </div>
     </section>
