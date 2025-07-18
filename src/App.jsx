@@ -9,6 +9,9 @@ import TestPrepration from "./pages/landing/TestPrepration";
 import Gallery from "./pages/landing/Gallery";
 import Blogs from "./pages/landing/Blogs";
 import StudyInUSA from "./pages/landing/study_abroad/study_countries/StudyInUSA";
+import StudyInJapan from "./pages/landing/study_abroad/study_countries/StudyInJapan";
+import StudyInUK from "./pages/landing/study_abroad/study_countries/StudyInUK";
+import StudyInCanada from "./pages/landing/study_abroad/study_countries/StudyInCanada";
 
 const router = createBrowserRouter([
   {
@@ -32,8 +35,20 @@ const router = createBrowserRouter([
         element: <StudyAbroad />,
       },
       {
-        path: "/about/usa",
+        path: "/studyabroad/usa",
         element: <StudyInUSA />,
+      },
+      {
+        path: "/studyabroad/japan",
+        element: <StudyInJapan />,
+      },
+      {
+        path: "/studyabroad/uk",
+        element: <StudyInUK />,
+      },
+      {
+        path: "/studyabroad/canada",
+        element: <StudyInCanada />,
       },
       {
         path: "/testpreparation",

@@ -1,18 +1,18 @@
 import StudyAbroadSection from "../../../../components/client/studyabroad/StudyAbroadSection";
 import { study_abroad_data } from "../../../../data/study_abroad_data";
 
-const usa = study_abroad_data.find((item) => item.country === "USA");
+const uk = study_abroad_data.find((item) => item.country === "UK");
 
-export default function StudyInUSA() {
+export default function StudyInUK() {
   return (
     <>
       {/* Other sections */}
 
       <StudyAbroadSection
-        country={usa.country}
-        imageSrc={usa.imageURL}
-        introductionText={usa.introductionText}
-        whyCountryText={usa.whyCountryText}
+        country={uk.country}
+        imageSrc={uk.imageURL}
+        introductionText={uk.introductionText}
+        whyCountryText={uk.whyCountryText}
       />
     </>
   );
