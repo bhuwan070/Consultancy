@@ -1,5 +1,7 @@
 import React from "react";
 import MessageMD from "../../components/client/Home/MessageMD";
+import OurTeam from "../../components/client/about/OurTeam";
+import { our_team_data } from "../../data/our_team_data";
 
 const About = () => {
   return (
@@ -22,6 +24,11 @@ const About = () => {
 
       {/* Message from MD */}
       <MessageMD />
+
+      {/* Our team section */}
+      <OurTeam members={our_team_data} />
+
+      {/* affilated colleges/universities */}
     </section>
   );
 };
