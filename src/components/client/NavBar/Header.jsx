@@ -121,23 +121,16 @@ export default function Header() {
             <NavbarLink
               to="/about"
               label="About Us"
-              dropdownItems={[
-                { label: "Our Team", to: "/about/our-team" },
-                { label: "Testimonials", to: "/about/testimonials" },
-                { label: "Company Profile", to: "/about/company-profile" },
-                { label: "Legal Document", to: "/about/legal-document" },
-              ]}
             />
 
             <NavbarLink
               to="/studyabroad"
               label="Study Abroad"
               dropdownItems={[
-                { label: "Study in USA", to: "/about/usa" },
-                { label: "Study in Japan", to: "/about/japan" },
-                { label: "Study in UK", to: "/about/uk" },
-                { label: "Study in Canada", to: "/about/canada" },
-                { label: "Study in Australia", to: "/about/australia" },
+                { label: "Study in USA", to: "/studyabroad/usa" },
+                { label: "Study in Japan", to: "/studyabroad/japan" },
+                { label: "Study in UK", to: "/studyabroad/uk" },
+                { label: "Study in Canada", to: "/studyabroad/canada" },
               ]}
             />
 
@@ -186,23 +179,16 @@ export default function Header() {
             <NavbarLink
               to="/about"
               label="About Us "
-              dropdownItems={[
-                { label: "Our Team", to: "/about/our-team" },
-                { label: "Testimonials", to: "/about/testimonials" },
-                { label: "Company Profile", to: "/about/company-profile" },
-                { label: "Legal Document", to: "/about/legal-document" },
-              ]}
             />
 
             <NavbarLink
               to="/studyabroad"
               label="Study Abroad"
               dropdownItems={[
-                { label: "Study in USA", to: "/about/usa" },
-                { label: "Study in Japan", to: "/about/japan" },
-                { label: "Study in UK", to: "/about/uk" },
-                { label: "Study in Canada", to: "/about/canada" },
-                { label: "Study in Australia", to: "/about/australia" },
+                { label: "Study in USA", to: "/studyabroad/usa" },
+                { label: "Study in Japan", to: "/studyabroad/japan" },
+                { label: "Study in UK", to: "/studyabroad/uk" },
+                { label: "Study in Canada", to: "/studyabroad/canada" },
               ]}
             />
 
