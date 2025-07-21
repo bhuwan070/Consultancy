@@ -5,13 +5,14 @@ import Home from "./pages/landing/Home";
 import About from "./pages/landing/About";
 import Contact from "./pages/landing/Contact";
 import StudyAbroad from "./pages/landing/study_abroad/StudyAbroad";
-import TestPrepration from "./pages/landing/TestPrepration";
 import Gallery from "./pages/landing/Gallery";
 import Blogs from "./pages/landing/Blogs";
 import StudyInUSA from "./pages/landing/study_abroad/study_countries/StudyInUSA";
 import StudyInJapan from "./pages/landing/study_abroad/study_countries/StudyInJapan";
 import StudyInUK from "./pages/landing/study_abroad/study_countries/StudyInUK";
 import StudyInCanada from "./pages/landing/study_abroad/study_countries/StudyInCanada";
+import TestPrepration from "./pages/landing/test_prep/TestPrepration"
+import GMAT from "./pages/landing/test_prep/test_prep_services/GMAT"
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/testpreparation",
         element: <TestPrepration />,
+      },
+      {
+      path: "/testpreparation/gmat",
+      element: <GMAT />,
       },
       {
         path: "/gallery",

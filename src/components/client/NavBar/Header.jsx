@@ -138,11 +138,11 @@ export default function Header() {
               to="/testpreparation"
               label="Test Preparation"
               dropdownItems={[
-                { label: "IELTS", to: "/about/ielts" },
-                { label: "PTE", to: "/about/pte" },
-                { label: "GRE", to: "/about/gre" },
-                { label: "GMAT", to: "/about/gmat" },
-                { label: "SAT", to: "/about/sat" },
+                { label: "IELTS", to: "/testpreparation/ielts" },
+                { label: "PTE", to: "/testpreparation/pte" },
+                { label: "GRE", to: "/testpreparation/gre" },
+                { label: "GMAT", to: "/testpreparation/gmat" },
+                { label: "SAT", to: "/testpreparation/sat" },
               ]}
             />
 
@@ -196,11 +196,11 @@ export default function Header() {
               to="/testpreparation"
               label="Test Preparation"
               dropdownItems={[
-                { label: "IELTS", to: "/about/ielts" },
-                { label: "PTE", to: "/about/pte" },
-                { label: "GRE", to: "/about/gre" },
-                { label: "GMAT", to: "/about/gmat" },
-                { label: "SAT", to: "/about/sat" },
+                { label: "IELTS", to: "/testpreparation/ielts" },
+                { label: "PTE", to: "/testpreparation/pte" },
+                { label: "GRE", to: "/testpreparation/gre" },
+                { label: "GMAT", to: "/testpreparation/gmat" },
+                { label: "SAT", to: "/testpreparation/sat" },
               ]}
             />
 
