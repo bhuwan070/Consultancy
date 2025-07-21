@@ -147,7 +147,7 @@ export default function Header() {
             />
 
             <NavbarLink
-              to="/OurServices"
+              to="/ourservices"
               label="Our Services"
               dropdownItems={[
                 { label: "Career Counselling", to: "/about/counselling" },
@@ -156,13 +156,12 @@ export default function Header() {
                   to: "/about/uni-selection",
                 },
                 { label: "Documentation Guidance", to: "/about/documentation" },
-                { label: "Admission Guidance", to: "/about/ad-guide" },
+                { label: "Carrer Counselling", to: "/ourservices/career-counselling" },
                 { label: "Visa Assistance", to: "/about/visa-assist" },
                 { label: "Financial Assistance", to: "/about/fin-assist" },
               ]}
             />
 
-            <NavbarLink to="/languageclass" label="Language Class" />
             <NavbarLink to="/gallery" label="Gallery" />
             <NavbarLink to="/blog" label="Blog" />
             <NavbarLink to="/contact" label="Contact Us" />
@@ -205,22 +204,21 @@ export default function Header() {
             />
 
             <NavbarLink
-              to="/OurServices"
+              to="/ourservices"
               label="Our Services"
               dropdownItems={[
-                { label: "Career Counselling", to: "/about/counselling" },
+                { label: "Career Counselling", to: "/ourservices/career-counselling" },
                 {
                   label: "College & University Selection",
                   to: "/about/uni-selection",
                 },
                 { label: "Documentation Guidance", to: "/about/documentation" },
-                { label: "Admission Guidance", to: "/about/ad-guide" },
+                { label: "Carrer Counselling", to: "/about/ad-guide" },
                 { label: "Visa Assistance", to: "/about/visa-assist" },
                 { label: "Financial Assistance", to: "/about/fin-assist" },
               ]}
             />
 
-            <NavbarLink to="/languageclass" label="Language Class" />
             <NavbarLink to="/gallery" label="Gallery" />
             <NavbarLink to="/blog" label="Blog" />
             <NavbarLink to="/contact" label="Contact Us" />

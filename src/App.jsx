@@ -17,9 +17,8 @@ import IELTS from "./pages/landing/test_prep/test_prep_services/IELTS.JSX";
 import GRE from "./pages/landing/test_prep/test_prep_services/GRE.JSX";
 import SAT from "./pages/landing/test_prep/test_prep_services/SAT.JSX";
 import PTE from "./pages/landing/test_prep/test_prep_services/PTE.JSX";
-
-
-
+import OurServicesPage from "./pages/landing/our_services/OurServicesPage.jsx";
+import CareerCounselling from "./pages/landing/our_services/our_services_drop/CarrerCounselling.jsx";
 
 const router = createBrowserRouter([
   {
@@ -81,6 +80,14 @@ const router = createBrowserRouter([
       {
         path: "/testpreparation/pte",
         element: <PTE />,
+      },
+      {
+        path: "/ourservices",
+        element: <OurServicesPage />,
+      },
+      {
+        path: "/ourservices/career-counselling",
+        element: <CareerCounselling />,
       },
       {
         path: "/gallery",
