@@ -20,6 +20,7 @@ import PTE from "./pages/landing/test_prep/test_prep_services/PTE.jsx";
 import OurServicesPage from "./pages/landing/our_services/OurServicesPage.jsx";
 import CareerCounselling from "./pages/landing/our_services/our_services_drop/CarrerCounselling.jsx";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -42,20 +43,8 @@ const router = createBrowserRouter([
         element: <StudyAbroad />,
       },
       {
-        path: "/studyabroad/usa",
+        path: "/about/usa",
         element: <StudyInUSA />,
-      },
-      {
-        path: "/studyabroad/japan",
-        element: <StudyInJapan />,
-      },
-      {
-        path: "/studyabroad/uk",
-        element: <StudyInUK />,
-      },
-      {
-        path: "/studyabroad/canada",
-        element: <StudyInCanada />,
       },
       {
         path: "/testpreparation",

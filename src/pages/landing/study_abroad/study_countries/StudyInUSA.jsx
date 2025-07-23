@@ -1,7 +1,12 @@
 import StudyAbroadSection from "../../../../components/client/studyabroad/StudyAbroadSection";
-import { study_abroad_data } from "../../../../data/study_abroad_data";
 
-const usa = study_abroad_data.find((item) => item.country === "USA");
+const introText = `Studying abroad opens up a world of new experiences, knowledge, and career opportunities.
+We help you navigate the entire process from choosing the right program to settling abroad.`;
+
+const whyCountryText = `The country offers world-class education, vibrant culture, and excellent research facilities.
+It's known for its student-friendly environment and post-study work options.`;
+
+const imageURL = "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80";
 
 export default function StudyInUSA() {
   return (
@@ -9,10 +14,10 @@ export default function StudyInUSA() {
       {/* Other sections */}
 
       <StudyAbroadSection
-        country={usa.country}
-        imageSrc={usa.imageURL}
-        introductionText={usa.introductionText}
-        whyCountryText={usa.whyCountryText}
+        country={"USA"}
+        imageSrc={imageURL}
+        introductionText={introText}
+        whyCountryText={whyCountryText}
       />
     </>
   );
