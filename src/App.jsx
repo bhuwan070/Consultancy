@@ -13,10 +13,10 @@ import StudyInUK from "./pages/landing/study_abroad/study_countries/StudyInUK";
 import StudyInCanada from "./pages/landing/study_abroad/study_countries/StudyInCanada";
 import TestPrepration from "./pages/landing/test_prep/TestPrepration";
 import GMAT from "./pages/landing/test_prep/test_prep_services/GMAT";
-import IELTS from "./pages/landing/test_prep/test_prep_services/IELTS.JSX";
-import GRE from "./pages/landing/test_prep/test_prep_services/GRE.JSX";
-import SAT from "./pages/landing/test_prep/test_prep_services/SAT.JSX";
-import PTE from "./pages/landing/test_prep/test_prep_services/PTE.JSX";
+import IELTS from "./pages/landing/test_prep/test_prep_services/IELTS.jsx";
+import GRE from "./pages/landing/test_prep/test_prep_services/GRE.jsx";
+import SAT from "./pages/landing/test_prep/test_prep_services/SAT.jsx";
+import PTE from "./pages/landing/test_prep/test_prep_services/PTE.jsx";
 import OurServicesPage from "./pages/landing/our_services/OurServicesPage.jsx";
 import CareerCounselling from "./pages/landing/our_services/our_services_drop/CarrerCounselling.jsx";
 
